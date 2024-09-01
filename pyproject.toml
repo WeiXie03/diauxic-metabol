@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "diaux_coli"
+version = "0.0.1"
+description = "An introductory hands-on example to Flux Balance Analysis (FBA), its limitations and corresponding dynamic/kinetic extensions to it. Using the example of E. coli growth on glucose and acetate used to demonstrate [dynamic enzyme constrained Flux Balance Analysis with enzyme change constraints (decFBAecc)](https://doi.org/10.1371/journal.pone.0280077)"
+authors = [
+  { name = "Tom X." },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.11"
+
+[tool.black]
+line-length = 99
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.ruff.lint.isort]
+known_first_party = ["diaux_coli"]
+force_sort_within_sections = true

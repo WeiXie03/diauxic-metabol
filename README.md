@@ -19,10 +19,12 @@ An introductory hands-on example to Flux Balance Analysis (FBA), its limitations
     or
     `mamba env install -f environment.yaml`
 
+4. _For now_, please manually download the data--S1 file, [`growth_medium.xlsx`](https://doi.org/10.1371/journal.pone.0280077.s001), and S4 file, [`fermentation_data.xlsx`](https://doi.org/10.1371/journal.pone.0280077.s004), of [the source paper](https://doi.org/10.1371/journal.pone.0280077).
+
 ## Running
 Run the notebook [1.0-tx-init-exploration.ipynb](notebooks/1.0-tx-init-exploration.ipynb).
 
-## ***CookieCutter**-inherited* Project Organization
+## ___CookieCutter__-inherited_ Project Organization
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen

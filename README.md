@@ -6,13 +6,29 @@
 
 An introductory hands-on example to Flux Balance Analysis (FBA), its limitations and corresponding dynamic/kinetic extensions to it. Using the example of E. coli growth on glucose and acetate used to demonstrate [dynamic enzyme constrained Flux Balance Analysis with enzyme change constraints (decFBAecc)](https://doi.org/10.1371/journal.pone.0280077)
 
-## Project Organization
+> [!NOTE]
+> Currently, all work in Jupyter notebook [1.0-tx-init-exploration.ipynb](notebooks/1.0-tx-init-exploration.ipynb).
+
+## Installation
+1. You must have git. Clone this repository.
+
+2. This project uses conda/mamba for cleanly managing dependencies/packages. If not yet installed, [install conda](https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html#before-you-start) or [mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html).
+
+3. Enter the root directory of the project where you cloned it to. Then run
+    `conda env install -f environment.yaml`
+    or
+    `mamba env install -f environment.yaml`
+
+## Running
+Run the notebook [1.0-tx-init-exploration.ipynb](notebooks/1.0-tx-init-exploration.ipynb).
+
+## ***CookieCutter**-inherited* Project Organization
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
-├── data
+├── ==data==
 │   ├── external       <- Data from third party sources.
 │   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
@@ -22,7 +38,7 @@ An introductory hands-on example to Flux Balance Analysis (FBA), its limitations
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+├── ==notebooks==      <- Jupyter notebooks. Naming convention is a number (for ordering),
 │                         the creator's initials, and a short `-` delimited description, e.g.
 │                         `1.0-jqp-initial-data-exploration`.
 │
@@ -34,8 +50,12 @@ An introductory hands-on example to Flux Balance Analysis (FBA), its limitations
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
 │
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
+├── ~~requirements.txt~~   <- ~~The requirements file for reproducing the analysis environment, e.g.~~
+│                         ~~generated with `pip freeze > requirements.txt`~~
+├── environment.yml    <- The original requirements file that generated the analysis environment
+│                         with `conda env create -f environment.yml`
+├── ==environment.yaml==   <- The requirements file for reproducing the analysis environment, e.g.
+|                         by running `conda env create -f environment.yaml`
 │
 ├── setup.cfg          <- Configuration file for flake8
 │
